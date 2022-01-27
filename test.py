@@ -20,7 +20,6 @@ class MainTest(unittest.TestCase):
         # Tests initial kgb results
         trunc_reviews = reviews[:2]
         kgb_endorsements = find_kgb(trunc_reviews)
-        print(kgb_endorsements) 
         self.assertEqual(len(kgb_endorsements), 2)
 
         # Tests negative reviews are filtered before hitting analyzer

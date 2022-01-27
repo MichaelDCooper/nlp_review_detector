@@ -85,8 +85,8 @@ def find_kgb(reviews):
         if review.recommendation == 'Yes':
             recommended_reviews.append(review)
 
+    classifier = TextClassifier.load('en-sentiment')
     for review in recommended_reviews:
-        classifier = TextClassifier.load('en-sentiment')
         target = Sentence(review.content)
         classifier.predict(target)
         score_str = str(target.labels[0])
@@ -99,7 +99,7 @@ def find_kgb(reviews):
 def print_reviews(reviews, count):
     for i in range(count):
         review = reviews[i]
-        print(f'Review Content: {review.content} \n Review Author: {review.author} \n Positivity Score: {review.sentiment}\n\n')
+        print(f'Review Content: {review.content} \nReview Author: {review.author} \nPositivity Score: {review.sentiment}\n\n')
 
 def main():
     review_list = fetch_reviews()
