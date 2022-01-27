@@ -1,4 +1,4 @@
-# nlp_review_detecter
+# NLP Review Detector
 
 ## Description
 This application is an NLP powered Python script that scrapes the internet and detects 'overly positive' reviews that may have been written by bots
@@ -19,4 +19,7 @@ After the packages have been installed you can run:
 and 
 `python -m unittest test.py` to run the test suite
 
-#### Note: Due to flairs runtime, the application can take up to 5 minutes to complete (more on first run)                    
+#### Note: Due to flairs runtime, the application can take up to 5 minutes to complete (more on first run)
+
+## Output
+
