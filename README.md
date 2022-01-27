@@ -19,7 +19,12 @@ After the packages have been installed you can run:
 and 
 `python -m unittest test.py` to run the test suite
 
-#### Note: Due to flairs runtime, the application can take up to 5 minutes to complete (more on first run)
+#### Note: Due to flairs runtime, the application can take up to 5 minutes to complete on first run
 
 ## Output
+### Main Output:
+![Main Output](https://github.com/MichaelDCooper/nlp_review_detector/blob/main/img/review_detector_main.png?raw=true)
+
+### Test Output: 
+![Test Output](https://github.com/MichaelDCooper/nlp_review_detector/blob/main/img/review_detector_test.png?raw=true)
 
