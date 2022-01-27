@@ -1,12 +1,13 @@
 # NLP Review Detector
 
 ## Description
-This application is an NLP powered Python script that scrapes the internet and detects 'overly positive' reviews that may have been written by bots
+This application is an NLP powered Python script that scrapes the internet and detects 'overly positive' reviews that may have been written by bots.
+
 It does so by: 
 1. Using `Beautiful Soup` to scrape a website, currently set to `www.dealerrater.com`
 2. Parses the site for reviews using Python's native `html.parser`
-3. Uses [Flair Nlp](https://github.com/flairNLP/flair) to detect how positive a review is 
-4. Prints the most positive reviews to the console.
+3. Uses [Flair Nlp](https://github.com/flairNLP/flair) to detect how positive a review is based on the content of the review. Since the goal is to determine being overly positive, and not to detect other ways the review may have suspicious origin, the strategy used is based on the premise that any bot farm would check their messages for sentiment before sending them out, and therefore, could be detected by checking sentiment programmatically.   
+5. After determing which reviews are most likely to be fake, the program outputs the 3 worst offenders to the console
 
 ## Usage
 The following Python pacakages are necessary for running the scrip. I recommend using `pip` to download them 
